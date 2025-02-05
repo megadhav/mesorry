@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For my chashmish</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>I'm Sorry</h1>
+        <div class="sorry-message" id="short-message">
+            Sorry na chashmish
+        </div>
+        <button class="btn" onclick="showLongMessage()">Read More</button>
+        
+        <div class="sorry-message hidden" id="long-message">
+            Sorry na chashmish.... kiti divas zhale mahitye ka hay ka nay na aaikun, parat tula hastana baghun pn kiti divas zhale kevde bhari haste tu, tu fuglyavr cute diste mahitye ka, pn evdi chidli na tu mg mala bhiti vaati, heh gadhav kay shana nahi mhanun de na sodun..please 
+            Love You
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Are you still angry at me</h1>
+
+        <div class="buttons">
+            <button class="btn" onclick="showMessage()">Yes</button>
+            <button class="btn no-btn" id="no-btn" onclick="moveButton()">No</button>
+        </div>
+
+        <div id="message" class="hidden">
+            <h2>Heh bagh kon aahe</h2>
+            <div class="images">
+                <img src="images/cutemonkey.jpg" alt="Monkey">
+                <img src="images/cutedonkey.jpg" alt="Donkey">
+            </div>
+            <button class="btn" onclick="showReunionImage()">Yeeeeeee</button>
+        </div>
+
+        <div id="reunion" class="hidden">
+            <h2>Aloooo apan</h2>
+            <img src="images/hug.jpeg" alt="Happy GIF">
+        </div>
+    </div>
+
+    <button class="btn" id="game-btn" onclick="startGame()">Play a Game</button>
+
+    <div class="game-container" id="game-container">
+        <h2>Gadhav shodh</h2>
+        <div style="position: relative; display: inline-block;">
+            <img src="images/monkey.jpg" alt="Monkey" onclick="revealDonkey()">
+            <img id="donkey" class="donkey" src="images/donkey.jpg" alt="Donkey">
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <h2>yessss sapadla</h2>
+        <p>Gadhav makad eaktra ch asnar na</p>
+        <button class="btn" onclick="closePopup()">Close</button>
+    </div>
+
+    <div class="overlay" id="overlay" onclick="closePopup()"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
